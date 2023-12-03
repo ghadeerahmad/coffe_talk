@@ -12,9 +12,9 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar bg-transparent fixed w-full" style="z-index: 100;">
+    <nav id="navbar" class="navbar bg-transparent fixed w-full" style="z-index: 999999;">
         <div class="container">
-            <div class="flex justify-between">
+            <div class="flex justify-between" style="align-items: center;">
                 <div></div>
                 <div>
                     <ul class="nav">
@@ -61,6 +61,69 @@
             </p>
         </div>
     </section>
+    <section style="position: relative;min-height:600px">
+        <div class="container" style="position: relative;">
+            <div class="second-right">
+                <div style="max-width: 50%;text-align:end">
+                    <h1>Highlights</h1>
+                    <p style="margin-top: 50px;">Discover what makes coffeetalks unique, from our commitment to human
+                        connection and quality, to our welcoming site and delicious coffees you can enjoy at home.</p>
+                </div>
+            </div>
+            <div class="second-left">
+                <div class="flex justify-between" style="z-index: 400;color:#fff;padding:10px 20px">
+                    <button class="btn-red">To know more</button>
+                    <div>
+                        <p class="font-siz:24px;">Autism spectrum disorder</p>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </section>
+    <section style="margin:50px 0;text-align:end">
+        <div class="container">
+            <h1 style="font-weight: bold;">Art Gallery</h1>
+            <div class="row" style="padding:0 100px;margin-top:50px">
+                <div class="col-md-3" style="padding:0">
+                    <img src="assets/images/Evento.png" />
+                </div>
+                <div class="col-md-3" style="padding:0">
+                    <img src="assets/images/Rectangle 3 Copy.png" />
+                </div>
+                <div class="col-md-3" style="padding:0">
+                    <img src="assets/images/Rectangle 3.png" />
+                </div>
+                <div class="col-md-3" style="padding:0">
+                    <img src="assets/images/Rectangle 6.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container flex justify-between">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align: end;">
+                <p>Subscribe to get our updates
+                </p>
+                <div
+                    style="background-color: #fff;border-radius:25px;color:black;padding:5px;display:flex;justify-content:space-between;align-items:center">
+                    <button class="btn-red" style="background-color: #29312A;">Submit</button>
+                    <span>Enter Your email</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function () {
+            let position = document.body.scrollTop || document.documentElement.scrollTop
+            let navbar = document.querySelector('#navbar')
+            if (position > 20) {
+                navbar.classList.add('bg-primary')
+            } else
+                navbar.classList.remove('bg-primary')
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
