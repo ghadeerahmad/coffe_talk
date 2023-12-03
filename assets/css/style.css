@@ -1,0 +1,90 @@
+:root {
+    --primary: #29312A;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('/assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('/assets/fonts/Righteous-Regular.ttf');
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+body {
+    font-family: 'lato';
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-gradient {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #29312B00 0%, var(--primary) 35%, var(--primary) 100%);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.hero-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 100%;
+}
+
+.border-image {
+    border-image: fill 0 linear-gradient(#fff, var(--primary));
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 0;
+    margin: 10px 10px;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid #fff;
+}
